@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
 import subprocess
 
-def get_ssid():
-    raw_wifi = subprocess.check_output(['netsh', 'WLAN', 'show', 'interfaces'])
-    data_strings = raw_wifi.decode('utf-8').split()
-    index = data_strings.index('Profile')
-    return data_strings[index + 2]
+network_name = "home_5"
+#network_obj = 
+my_con = "1"
 
-
-get_ssid();
+print(network_name + " " + my_con)
